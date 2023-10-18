@@ -22,9 +22,9 @@ const weather = (() => {
     }
 
     async function getWeather (city) {
-        const link = `http://api.weatherapi.com/v1/current.json?key=1b20ea5a30ff4be490912610231310&q=${city}`;
+        const link = `https://api.weatherapi.com/v1/current.json?key=1b20ea5a30ff4be490912610231310&q=${city}`;
         try {
-            const response = await fetch(link, {mode: 'no-cors'});
+            const response = await fetch(link, {mode: 'cors'});
             const data = await response.json();
             weatherData(data);
         } catch (error) {
