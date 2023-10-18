@@ -24,4 +24,4 @@ after many tries I finally got it working.
 
 ## Conclusion
 
-This app was a very simple one to make and it serves it's purpose.
+This app was a very simple one to make and it serves its purpose.
