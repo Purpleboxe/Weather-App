@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    --silver: #E8E9EB;
+}
+
+body {
+    font-family: 'Gabarito', 'sans-serif';
+}
+
+/* Header */
+
+header {
+    display: flex;
+    padding: 40px 10rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: var(--silver);
+    border-bottom: 2px solid #c7c7c7;
+    margin-bottom: 10rem;
+}
+
+header h1 {
+    color: black;
+    margin-right: 10px;
+}
+
+#search {
+    padding: 0.6rem 1.2rem;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#submit {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #7FC8F8;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.1s ease-in-out;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #5AA9E6;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        width: 100%;
+    }
+}
+
+/* Body */
+
+#body {
+    display: flex;
+    justify-content: center;
+}
+
+.Weather {
+    width: 400px;
+    padding: 20px;
+    background-color: var(--silver);
+    border-radius: 20px;
+    box-shadow: 3px 3px #c7c7c7;
+}
+
+.location {
+    font-size: 2.5rem;
+}
+
+.degrees {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.details {
+    font-size: 2rem;
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+.hide {
+    display: none;
+}
